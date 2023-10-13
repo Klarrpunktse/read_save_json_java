@@ -4,7 +4,14 @@ public class User {
     private long id;
     private String username;
 
+    // tom konstruktor och sätter sedan username och id med setter metod
     public User() {
+    }
+
+    // men går jättebra att göra så här också, se Main klassen där två users skapas
+    public User(long id, String username) {
+        this.id = id;
+        this.username = username;
     }
 
     public long getId() {
