@@ -12,7 +12,8 @@
     "username": "Tore"
   },
   "Janne": {
-    "id": 4,
+    "subject": "JAVA",
+    "id": 13,
     "username": "Janne"
   },
   "NisseJanne": {
@@ -23,8 +24,29 @@
     "id": 8,
     "username": "Testare"
   },
-  "Test User": {
-    "id": 6,
-    "username": "Test User"
+  "GunBritt": {
+    "id": 10,
+    "username": "GunBritt"
+  },
+  "Nisse": {
+    "id": 12,
+    "username": "Nisse"
+  },
+  "Hejsan": {
+    "subject": "JAVA",
+    "id": 11,
+    "username": "Hejsan",
+    "incomeList": {
+      "1": {
+        "id": "1",
+        "date": "20231024",
+        "amount": 5000.0
+      },
+      "2": {
+        "id": "2",
+        "date": "20231027",
+        "amount": 1000.0
+      }
+    }
   }
 }

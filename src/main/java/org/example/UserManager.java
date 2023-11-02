@@ -58,11 +58,17 @@ public class UserManager {
         }
     }
 
+    public void listUsername(){
+        for(User user: userList.values()) {
+            System.out.println("user: " + user.getUsername());
+        }
+    }
+
     // METOD FÖR ATT SPARA TILL FIL
     // se till att skicka en Income income eller Expense expense in i metoder
     // jag har ju en User user
-    public void saveFile(User user) throws IOException {
-        userList.put(user.getUsername(), user);
+    public void saveFile() throws IOException {
+        //userList.put(user.getUsername(), user);
         // OBS! I den här metoden lägger jag både till en user i listan och sparar listan till fil
         // i er uppgift är det bättre att göra en separat metod för att lägga till i listan
         // och bara låta den här metoden spara till fil
@@ -76,7 +82,6 @@ public class UserManager {
         fw.close();
         // stänger file writer men ska no fortsätta med nåt kan ni istället ha
         // fw.flush()
-        System.out.println("User saved!");
     }
 
     // EXEMPEL PÅ METOD FÖR ATT LÄGGA TILL I LISTAN
@@ -87,6 +92,18 @@ public class UserManager {
     public void addUserToArray(User user) {
         userList.put(user.getUsername(), user);
         System.out.println("User saved!");
+    }
+
+    public void getUser(String name) {
+        User user = userList.get(name);
+        System.out.println("User id of user " + name + " " +user.getId());
+
+    }
+
+    public void removeUser(String name) {
+        userList.remove(name);
+        System.out.println("User removed!");
+        System.out.println("User List:");
     }
 }
 
